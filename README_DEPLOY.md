@@ -26,7 +26,7 @@ docker compose up -d --build
 ## 3. Verificações
 ```bash
 docker compose ps
-curl -sS http://127.0.0.1:${API_PORT:-8088}/health
+curl -sS http://127.0.0.1:${API_PORT:-8000}/health
 curl -sS http://127.0.0.1:${NGINX_PORT:-80}/health
 ```
 

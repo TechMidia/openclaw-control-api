@@ -11,7 +11,7 @@ if [[ -f ".env" ]]; then
   set +a
 fi
 
-BASE_URL="${BASE_URL:-http://127.0.0.1:${APP_PORT:-8088}}"
+BASE_URL="${BASE_URL:-http://127.0.0.1:${APP_PORT:-8000}}"
 ADMIN_USER="${ADMIN_DEFAULT_USERNAME:-admin}"
 ADMIN_PASSWORD="${ADMIN_DEFAULT_PASSWORD:-change-me-now}"
 
