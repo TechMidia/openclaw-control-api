@@ -11,6 +11,6 @@ if [[ -f ".env" ]]; then
   set +a
 fi
 
-BASE_URL="${BASE_URL:-http://127.0.0.1:${APP_PORT:-8088}}"
+BASE_URL="${BASE_URL:-http://127.0.0.1:${APP_PORT:-8000}}"
 
 curl -sS "${BASE_URL}/health" | python3 -m json.tool

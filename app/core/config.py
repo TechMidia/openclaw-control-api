@@ -16,11 +16,11 @@ class Settings(BaseSettings):
 
     app_name: str = "openclaw-control-api"
     app_env: str = "development"
-    app_port: int = 8088
+    app_port: int = 8000
     log_level: str = "INFO"
     allowed_origins: str = "http://localhost:3000"
 
-    database_url: str = "postgresql+psycopg2://openclaw:openclaw@postgres:5432/openclaw_control"
+    database_url: str = "postgresql://openclaw:openclaw@postgres:5432/openclaw_control"
     redis_url: str = "redis://redis:6379/0"
     use_redis: bool = False
 

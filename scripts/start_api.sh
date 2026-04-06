@@ -13,7 +13,7 @@ python -m pip install --upgrade pip >/dev/null
 pip install -r requirements.txt >/dev/null
 
 export PYTHONPATH="$ROOT_DIR"
-export APP_PORT="${APP_PORT:-8088}"
+export APP_PORT="${APP_PORT:-8000}"
 
 uvicorn app.main:app --host 0.0.0.0 --port "$APP_PORT"
 

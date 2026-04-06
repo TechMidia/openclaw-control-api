@@ -71,7 +71,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 PYTHONPATH=. alembic upgrade head
 PYTHONPATH=. python scripts/seed.py
-PYTHONPATH=. uvicorn app.main:app --host 0.0.0.0 --port 8088
+PYTHONPATH=. uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
 
 ## Rodar com Docker

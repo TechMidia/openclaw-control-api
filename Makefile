@@ -1,5 +1,5 @@
 PYTHON ?= python3
-APP_PORT ?= 8088
+APP_PORT ?= 8000
 
 .PHONY: install run migrate seed test up down check-health check-ingest check-dashboard
 

@@ -49,17 +49,17 @@ PYTHONPATH=. python scripts/seed.py
 
 ## 6. Validação mínima
 ```bash
-curl http://127.0.0.1:8088/health
+curl http://127.0.0.1:8000/health
 ```
 
 ```bash
-curl -X POST http://127.0.0.1:8088/auth/login \
+curl -X POST http://127.0.0.1:8000/auth/login \
   -H 'Content-Type: application/json' \
   -d '{"username":"admin","password":"<senha>"}'
 ```
 
 ```bash
-curl -X POST http://127.0.0.1:8088/ingest/full \
+curl -X POST http://127.0.0.1:8000/ingest/full \
   -H 'X-Ingest-Token: <INGEST_API_TOKEN>' \
   -H 'Content-Type: application/json' \
   -d '{"data":{"operations_day":{"date":"2026-04-06","summary":"ok"}}}'
